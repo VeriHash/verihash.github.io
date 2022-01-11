@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	background: #f8f8f2;
+	border: 0;
+	color: #282828;
+	display: flex;
+	flex-direction: column;
+	font-family: "Source Sans Pro";
+	font-size: 14pt;
+	margin: 0;
+	padding: 0;
+}
+
+/* Default links */
+
+a
+{
+	color: #ff4b00;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #268bd2;
+	text-decoration: none;
+}
+
+/* The wrapper for the header and content */
+
+wrapper
+{
+	background: #f8f8f2;
+	display: block;
+	flex: 1 0 auto;
+	margin: 0 auto 1em auto;
+	max-width: 850px;
+	padding: 0 2em;
+	width: calc(100% - 4em);
+}
+
+wrapper p, li
+{
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+/* The header with the title and navigation */
+
+/* The header's padding changes with respect to width, which is why we use a */
+/* percentage inside of padding. */
+/* https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css */
+header
+{
+	display: block;
+	padding: 10% 0 6% 0;
+}
+
+header.title
+{
+	width: 850px;
+}
+
+header img
+{
+	width: 100%;
+}
+
+/* The content */
+
+content
+{
+	display: block;
+	margin: 0 auto;
+	max-width: 850px;
+}
+
+/* Social links */
+
+social
+{
+	display: block;
+	margin: 4em auto;
+}
+
+social a
+{
+	align: center;
+	border-radius: 0.5em;
+	display: inline-block;
+	height: 1.5em;
+	margin: 0 0.3em;
+	padding: 10px;
+	width: 1.5em;
+}
+
+social a:first-child
+{
+	margin-left: 0;
+}
+
+social a:last-child
+{
+	margin-right: 0;
+}
+
+/* For social hover colors: luminosity + 5 */
+
+social a.email
+{
+	background: #000000;
+}
+social a.email:hover
+{
+	background: #191919;
+}
+
+social a.github
+{
+	background: #000000;
+}
+social a.github:hover
+{
+	background: #191919;
+}
+
+/* Sections */
+
+section
+{
+	display: block;
+}
+
+div.date
+{
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+section div.more
+{
+	margin-top: 1em;
+	text-align: right;
+}
+
+section img
+{
+	margin: 1em auto 0 auto;
+	width: calc(100% - 30px);
+}
