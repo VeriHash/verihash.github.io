@@ -21,6 +21,7 @@ body
 h2
 {
 	margin-top: 2em;
+	text-align: center;
 }
 
 h2:first-of-type
@@ -32,13 +33,13 @@ h2:first-of-type
 
 a
 {
-	color: #ff4b00;
-	text-decoration: none;
+	color: #cc241d;
+	text-decoration: underline;
 }
 
 a:hover
 {
-	color: #268bd2;
+	color: #808080;
 	text-decoration: none;
 }
 
@@ -121,16 +122,17 @@ footer
 	display: block;
 	flex-shrink: 0;
 	line-height: 1em;
-	margin-top: 2em;
-	padding: 2.5em 0 2em 0;
+	margin-top: 1em;
+	padding: 3em 0 2em 0;
 	text-align: center;
 	width: 100%;
 }
 
 footer img.logo
 {
-	height: 250px;
-	width: 250px;
+	height: 150px;
+	width: 150px;
+	margin-bottom: 0.5em;
 }
 
 footer p
@@ -143,7 +145,7 @@ footer p
 social
 {
 	display: block;
-	margin: 1.5em auto;
+	margin: 1.5em auto 2em auto;
 }
 
 social a
