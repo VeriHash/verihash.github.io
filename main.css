@@ -1,5 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 
+/* Themes */
+
+.light
+{
+	--fg-color: #282828;
+	--bg-color: #f2f2f2;
+	--fg2-color: #f2f2f2;
+	--bg2-color: #282828;
+	--link-color: #cc241d;
+	--link-hover-color: #808080;
+	--logo: url("logo-light.svg");
+	--logo-footer: url("logo_footer-light.svg");
+	--wtia: url("wtia-light.png");
+	--social-email-image: url("email-light.svg");
+	--social-email-bg-color: #000000;
+	--social-email-hover-color: #191919;
+	--social-github-image: url("github-light.svg");
+	--social-github-bg-color: #000000;
+	--social-github-hover-color: #191919;
+}
+
+.dark
+{
+	--fg-color: #f2f2f2;
+	--bg-color: #282828;
+	--fg2-color: #282828;
+	--bg2-color: #f2f2f2;
+	--link-color: #cc241d;
+	--link-hover-color: #808080;
+	--logo: url("logo-dark.svg");
+	--logo-footer: url("logo_footer-light.svg");
+	--wtia: url("wtia-dark.png");
+	--social-email-image: url("email-dark.svg");
+	--social-email-bg-color: #ffffff;
+	--social-email-hover-color: #f9f9f9;
+	--social-github-image: url("github-dark.svg");
+	--social-github-bg-color: #ffffff;
+	--social-github-hover-color: #f9f9f9;
+}
+
+.red-light
+{
+	--fg-color: #d40000;
+	--bg-color: #ffd5d5;
+	--fg2-color: #ffd5d5;
+	--bg2-color: #d40000;
+	--link-color: #ff2a2a;
+	--link-hover-color: #ff5555;
+	--logo: url("logo-red.svg");
+	--logo-footer: url("logo_footer-red.svg");
+	--wtia: url("wtia-light.png");
+	--social-email-image: url("email-light.svg");
+	--social-email-bg-color: #000000;
+	--social-email-hover-color: #191919;
+	--social-github-image: url("github-light.svg");
+	--social-github-bg-color: #000000;
+	--social-github-hover-color: #191919;
+}
+
+.red-dark
+{
+	--fg-color: #d40000;
+	--bg-color: #2b0000;
+	--fg2-color: #2b0000;
+	--bg2-color: #d40000;
+	--link-color: #ff2a2a;
+	--link-hover-color: #ff5555;
+	--logo: url("logo-red.svg");
+	--logo-footer: url("logo_footer-red.svg");
+	--wtia: url("wtia-dark.png");
+	--social-email-image: url("email-dark.svg");
+	--social-email-bg-color: #ffffff;
+	--social-email-hover-color: #f9f9f9;
+	--social-github-image: url("github-dark.svg");
+	--social-github-bg-color: #ffffff;
+	--social-github-hover-color: #f9f9f9;
+}
+
+.blue-light
+{
+	--fg-color: #00aad4;
+	--bg-color: #d5f6ff;
+	--fg2-color: #d5f6ff;
+	--bg2-color: #00aad4;
+	--link-color: #0088aa;
+	--link-hover-color: #00ccff;
+	--logo: url("logo-blue.svg");
+	--logo-footer: url("logo_footer-blue.svg");
+	--wtia: url("wtia-light.png");
+	--social-email-image: url("email-light.svg");
+	--social-email-bg-color: #000000;
+	--social-email-hover-color: #191919;
+	--social-github-image: url("github-light.svg");
+	--social-github-bg-color: #000000;
+	--social-github-hover-color: #191919;
+}
+
+.blue-dark
+{
+	--fg-color: #00aad4;
+	--bg-color: #00222b;
+	--fg2-color: #00222b;
+	--bg2-color: #00aad4;
+	--link-color: #0088aa;
+	--link-hover-color: #00ccff;
+	--logo: url("logo-blue.svg");
+	--logo-footer: url("logo_footer-blue.svg");
+	--wtia: url("wtia-dark.png");
+	--social-email-image: url("email-dark.svg");
+	--social-email-bg-color: #ffffff;
+	--social-email-hover-color: #f9f9f9;
+	--social-github-image: url("github-dark.svg");
+	--social-github-bg-color: #ffffff;
+	--social-github-hover-color: #f9f9f9;
+}
+
+.green-light
+{
+	--fg-color: #5aa02c;
+	--bg-color: #e3f4d7;
+	--fg2-color: #e3f4d7;
+	--bg2-color: #5aa02c;
+	--link-color: #8dd35f;
+	--link-hover-color: #aade87;
+	--logo: url("logo-green.svg");
+	--logo-footer: url("logo_footer-green.svg");
+	--wtia: url("wtia-light.png");
+	--social-email-image: url("email-light.svg");
+	--social-email-bg-color: #000000;
+	--social-email-hover-color: #191919;
+	--social-github-image: url("github-light.svg");
+	--social-github-bg-color: #000000;
+	--social-github-hover-color: #191919;
+}
+
+.green-dark
+{
+	--fg-color: #5aa02c;
+	--bg-color: #17280b;
+	--fg2-color: #17280b;
+	--bg2-color: #5aa02c;
+	--link-color: #8dd35f;
+	--link-hover-color: #aade87;
+	--logo: url("logo-green.svg");
+	--logo-footer: url("logo_footer-green.svg");
+	--wtia: url("wtia-dark.png");
+	--social-email-image: url("email-dark.svg");
+	--social-email-bg-color: #ffffff;
+	--social-email-hover-color: #f9f9f9;
+	--social-github-image: url("github-dark.svg");
+	--social-github-bg-color: #ffffff;
+	--social-github-hover-color: #f9f9f9;
+}
+
+/* Main CSS */
+
 html, body
 {
 	height: 100%;
@@ -7,9 +163,9 @@ html, body
 
 body
 {
-	background: #f2f2f2;
+	background: var(--bg-color);
+	color: var(--fg-color);
 	border: 0;
-	color: #282828;
 	display: flex;
 	flex-direction: column;
 	font-family: "Source Sans Pro";
@@ -33,13 +189,13 @@ h2:first-of-type
 
 a
 {
-	color: #cc241d;
+	color: var(--link-color);
 	text-decoration: underline;
 }
 
 a:hover
 {
-	color: #808080;
+	color: var(--link-hover-color);
 	text-decoration: none;
 }
 
@@ -47,22 +203,14 @@ a:hover
 
 banner
 {
-	background: #282828;
-	color: #f2f2f2;
+	background: var(--bg2-color);
+	color: var(--fg2-color);
 	display: block;
 	flex-shrink: 0;
 	line-height: 1.5em;
 	min-height: 0.5em;
-	text-align: center;
-}
-
-banner span
-{
-	display: block;
-	font-weight: bold;
-	margin: 0 auto;
-	max-width: 850px;
-	padding: 1em 0 0 0;
+	text-align: right;
+	padding: 0.5em;
 }
 
 /* The wrapper for the header and content */
@@ -94,14 +242,10 @@ header
 	padding: 10% 0 6% 0;
 }
 
-header.title
-{
-	width: 850px;
-}
-
 header img
 {
 	width: 100%;
+	content: var(--logo);
 }
 
 /* The content */
@@ -113,12 +257,19 @@ content
 	max-width: 850px;
 }
 
+content img.wtia
+{
+	content: var(--wtia);
+	width: 150px;
+	margin-right: 1em;
+}
+
 /* The footer */
 
 footer
 {
-	background: #282828;
-	color: #f2f2f2;
+	background: var(--bg2-color);
+	color: var(--fg2-color);
 	display: block;
 	flex-shrink: 0;
 	line-height: 1em;
@@ -130,6 +281,7 @@ footer
 
 footer img.logo
 {
+	content: var(--logo-footer);
 	height: 150px;
 	width: 150px;
 	margin-bottom: 0.5em;
@@ -173,20 +325,28 @@ social a:last-child
 
 social a.email
 {
-	background: #000000;
+	background: var(--social-email-bg-color);
 }
 social a.email:hover
 {
-	background: #191919;
+	background: var(--social-email-hover-color);
+}
+social a.email img
+{
+	content: var(--social-email-image);
 }
 
 social a.github
 {
-	background: #000000;
+	background: var(--social-github-bg-color);
 }
 social a.github:hover
 {
-	background: #191919;
+	background: var(--social-github-hover-color);
+}
+social a.github img
+{
+	content: var(--social-github-image);
 }
 
 /* Sections */

@@ -49,15 +49,25 @@
 
 	</head>
 
-	<body>
+	<body class="light">
 
 		<banner>
+			Color Theme: <select id="themeSelector">
+				<option value="light">Default (Light)</option>
+				<option value="dark">Default (Dark)</option>
+				<option value="red-light">Red (Light)</option>
+				<option value="red-dark">Red (Dark)</option>
+				<option value="green-light">Green (Light)</option>
+				<option value="green-dark">Green (Dark)</option>
+				<option value="blue-light">Blue (Light)</option>
+				<option value="blue-dark">Blue (Dark)</option>
+			</select>
 		</banner>
 
 		<wrapper>
 
 			<header>
-			<a href="/"><img class="title" src="logo_light_bg.svg" /></a>
+			<a href="/"><img class="title" /></a>
 			</header>
 
 			<content>
@@ -74,21 +84,17 @@
 
 				<h2>Membership</h2>
 
-				<p><a href="https://www.washingtontechnology.org/blockchain/" target="_new"><img src="wtia_light_bg.png" style="width:150px; margin-right: 1em;"/></a>We are a proud member of the <a href="https://www.washingtontechnology.org/blockchain/" target="_new">WTIA Cascadia Blockchain Association</a></p>
+				<p><a href="https://www.washingtontechnology.org/blockchain/" target="_new"><img class="wtia" /></a>We are a proud member of the <a href="https://www.washingtontechnology.org/blockchain/" target="_new">WTIA Cascadia Blockchain Association</a></p>
 
 			</content>
 
 		</wrapper>
 
 		<footer>
-			<img class="logo" src="logo_plain_red.svg"/>
+			<img class="logo" />
 			<social>
-				<a class="email" href="mailto:info@verihash.io" title="Email VeriHash" target="_new">
-					<img src="email.svg" />
-				</a>
-				<a class="github" href="https://github.com/verihash" title="VeriHash Github" target="_new">
-					<img src="github.svg" />
-				</a>
+				<a class="email" href="mailto:info@verihash.io" title="Email VeriHash" target="_new"><img /></a>
+				<a class="github" href="https://github.com/verihash" title="VeriHash Github" target="_new"><img /></a>
 			</social>
 			<p>&copy; 2022 Verihash</p>
 		</footer>
@@ -96,3 +102,6 @@
 	</body>
 
 </html>
+
+<!-- My theme changer -->
+<script type="text/javascript" src="theme.js"></script>
