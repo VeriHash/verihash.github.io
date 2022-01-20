@@ -154,6 +154,44 @@
 	--social-github-hover-color: #f9f9f9;
 }
 
+.rainbow-light
+{
+	--fg-color: #282828;
+	--bg-color: #f2f2f2;
+	--fg2-color: #282828;
+	--bg2-color: #d9d9d9;
+	--link-color: #cc241d;
+	--link-hover-color: #808080;
+	--logo: url("logo-rainbow-light.svg");
+	--logo-footer: url("logo_footer-rainbow.svg");
+	--wtia: url("wtia-light.png");
+	--social-email-image: url("email-light.svg");
+	--social-email-bg-color: #000000;
+	--social-email-hover-color: #191919;
+	--social-github-image: url("github-light.svg");
+	--social-github-bg-color: #000000;
+	--social-github-hover-color: #191919;
+}
+
+.rainbow-dark
+{
+	--fg-color: #f2f2f2;
+	--bg-color: #282828;
+	--fg2-color: #f2f2f2;
+	--bg2-color: #525252;
+	--link-color: #cc241d;
+	--link-hover-color: #808080;
+	--logo: url("logo-rainbow-dark.svg");
+	--logo-footer: url("logo_footer-rainbow.svg");
+	--wtia: url("wtia-dark.png");
+	--social-email-image: url("email-dark.svg");
+	--social-email-bg-color: #ffffff;
+	--social-email-hover-color: #f9f9f9;
+	--social-github-image: url("github-dark.svg");
+	--social-github-bg-color: #ffffff;
+	--social-github-hover-color: #f9f9f9;
+}
+
 /* Main CSS */
 
 html, body
