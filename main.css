@@ -235,7 +235,7 @@
 	--fg-color: #1d2021;
 	--bg-color: #f9f5d7;
 	--fg2-color: #1d2021;
-	--bg2-color: #f2e5bc;
+	--bg2-color: #ede9c6;
 	--link-color: #fb4934;
 	--link-hover-color: #a89984;
 	--logo: url("logo-gruvbox-light.svg");
@@ -273,8 +273,8 @@
 	--fg-color: #272822;
 	--bg-color: #f8f8f2;
 	--fg2-color: #272822;
-	--bg2-color: #e7e7d2;
-	--link-color: #fd971f;
+	--bg2-color: #e7e7d1;
+	--link-color: #f92672;
 	--link-hover-color: #75715e;
 	--logo: url("logo-monokai-light.svg");
 	--logo-footer: url("logo_footer-monokai.svg");
@@ -292,11 +292,49 @@
 	--fg-color: #f8f8f2;
 	--bg-color: #272822;
 	--fg2-color: #f8f8f2;
-	--bg2-color: #43453b;
-	--link-color: #fd971f;
+	--bg2-color: #49483e;
+	--link-color: #f92672;
 	--link-hover-color: #75715e;
 	--logo: url("logo-monokai-dark.svg");
 	--logo-footer: url("logo_footer-monokai.svg");
+	--wtia: url("wtia-dark.png");
+	--social-email-image: url("email-dark.svg");
+	--social-email-bg-color: #ffffff;
+	--social-email-hover-color: #f9f9f9;
+	--social-github-image: url("github-dark.svg");
+	--social-github-bg-color: #ffffff;
+	--social-github-hover-color: #f9f9f9;
+}
+
+.solarized-light
+{
+	--fg-color: #657b83;
+	--bg-color: #fdf6e3;
+	--fg2-color: #657b83;
+	--bg2-color: #eee8d5;
+	--link-color: #dc322f;
+	--link-hover-color: #93a1a1;
+	--logo: url("logo-solarized-light.svg");
+	--logo-footer: url("logo_footer-solarized.svg");
+	--wtia: url("wtia-light.png");
+	--social-email-image: url("email-light.svg");
+	--social-email-bg-color: #000000;
+	--social-email-hover-color: #191919;
+	--social-github-image: url("github-light.svg");
+	--social-github-bg-color: #000000;
+	--social-github-hover-color: #191919;
+}
+
+.solarized-dark
+{
+	--fg-color: #839496;
+	--bg-color: #002b36;
+	--fg2-color: #839496;
+	--bg2-color: #073642;
+	--link-color: #dc322f;
+	--link-hover-color: #586e75;
+	--logo: url("logo-solarized-dark.svg");
+	--logo-footer: url("logo_footer-solarized.svg");
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
