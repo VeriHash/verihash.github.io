@@ -445,7 +445,7 @@ header title
 header img
 {
 	width: 100%;
-	content: var(--logo);
+	/* content: var(--logo); */
 }
 
 /* The content */
