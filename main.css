@@ -445,7 +445,9 @@ header title
 header img
 {
 	width: 100%;
-	/* content: var(--logo); */
+	width: 850px;
+	max-width: calc(100%);
+	content: var(--logo);
 }
 
 /* The content */
@@ -460,7 +462,8 @@ content
 content img.wtia
 {
 	content: var(--wtia);
-	width: 150px;
+	width: 100px;
+	max-width: 5em;
 	margin-right: 1em;
 }
 
