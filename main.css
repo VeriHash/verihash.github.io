@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
 
 /* Themes */
 
@@ -358,7 +358,7 @@ body
 	border: 0;
 	display: flex;
 	flex-direction: column;
-	font-family: "Source Sans Pro";
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 1.3em;
 	font-weight: 300;
 	margin: 0;
@@ -396,12 +396,74 @@ banner
 {
 	background: var(--bg2-color);
 	color: var(--fg2-color);
-	display: block;
-	flex-shrink: 0;
-	line-height: 1.5em;
-	min-height: 0.5em;
-	text-align: right;
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 1em;
+	position: fixed;
+	width: 100%;
+	align-items: center;
 	padding: 0.5em;
+}
+
+banner div.logo
+{
+	flex-grow: 1;
+	margin: 0.5em 0.5em 0.35em 0.5em;
+}
+
+banner div.logo img
+{
+	width: 250px;
+	content: var(--logo);
+}
+
+banner div.links
+{
+	flex-grow: 2;
+	text-align: center;
+}
+
+banner div.links a
+{
+	display: inline-block;
+	margin: 0.5em;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: var(--fg-color);
+	text-decoration: none;
+	border-bottom: 2px solid var(--bg2-color);
+}
+
+banner div.links a:last-child
+{
+	margin-right: 1em;
+}
+
+banner div.links a:hover
+{
+	border-bottom: 2px solid var(--fg-color);
+}
+
+banner div.themeSelector
+{
+	flex-grow: 1;
+	margin: 0 1em 0 0;
+	text-align: right;
+}
+
+.hide
+{
+	display: none;
+	/* transition: all 0.1s; */
+	/* opacity: 0; */
+}
+
+.show
+{
+	display: inline;
+	/* width: 100%; */
+	/* transition: all 0.1s; */
+	/* opacity: 1; */
 }
 
 /* The wrapper for the header and content */
@@ -410,7 +472,7 @@ wrapper
 {
 	display: block;
 	flex: 1 0 auto;
-	margin: 0 auto 5% auto;
+	margin: 4em auto 1.5em auto;
 	max-width: 850px;
 	padding: 0 2em;
 	width: calc(100% - 4em);
@@ -434,7 +496,7 @@ header
 
 header h1
 {
-	margin: 10% 0 5% 0;
+	margin: 0.5em 0 1em 0;
 }
 
 header title
@@ -445,7 +507,6 @@ header title
 header img
 {
 	width: 100%;
-	width: 850px;
 	max-width: calc(100%);
 	content: var(--logo);
 }
@@ -476,8 +537,7 @@ footer
 	display: block;
 	flex-shrink: 0;
 	line-height: 1em;
-	margin-top: 0.5em;
-	padding: 2em 0 1em 0;
+	padding: 2.5em 0 1.5em 0;
 	text-align: center;
 	width: 100%;
 }

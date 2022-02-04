@@ -54,33 +54,46 @@
 
 	<body class="light">
 
-		<banner>
-			Color Theme: <select id="themeSelector">
-				<option value="light">Default (Light)</option>
-				<option value="dark">Default (Dark)</option>
-				<option value="red-light">Red (Light)</option>
-				<option value="red-dark">Red (Dark)</option>
-				<option value="green-light">Green (Light)</option>
-				<option value="green-dark">Green (Dark)</option>
-				<option value="blue-light">Blue (Light)</option>
-				<option value="blue-dark">Blue (Dark)</option>
-				<option value="grey-light">Grey (Light)</option>
-				<option value="grey-dark">Grey (Dark)</option>
-				<option value="rainbow-light">Rainbow (Light)</option>
-				<option value="rainbow-dark">Rainbow (Dark)</option>
-				<option value="gruvbox-light">Gruvbox (Light)</option>
-				<option value="gruvbox-dark">Gruvbox (Dark)</option>
-				<option value="monokai-light">Monokai (Light)</option>
-				<option value="monokai-dark">Monokai (Dark)</option>
-				<option value="solarized-light">Solarized (Light)</option>
-				<option value="solarized-dark">Solarized (Dark)</option>
-			</select>
+		<banner class="banner">
+			<div id="bannerLogo" class="logo hide">
+				<a href="/"><img alt="VeriHash.io" src="logo-light.svg" /></a>
+			</div>
+			<!-- <div id="bannerLinks" class="links hide">
+				<a href="services.html">Services</a>
+				&bullet;
+				<a href="services.html">Contact</a>
+			</div> -->
+			<div class="themeSelector">
+				Color Theme:&nbsp;
+				<select id="themeSelector">
+					<option value="light">Default (Light)</option>
+					<option value="dark">Default (Dark)</option>
+					<option value="red-light">Red (Light)</option>
+					<option value="red-dark">Red (Dark)</option>
+					<option value="green-light">Green (Light)</option>
+					<option value="green-dark">Green (Dark)</option>
+					<option value="blue-light">Blue (Light)</option>
+					<option value="blue-dark">Blue (Dark)</option>
+					<option value="grey-light">Grey (Light)</option>
+					<option value="grey-dark">Grey (Dark)</option>
+					<option value="rainbow-light">Rainbow (Light)</option>
+					<option value="rainbow-dark">Rainbow (Dark)</option>
+					<option value="gruvbox-light">Gruvbox (Light)</option>
+					<option value="gruvbox-dark">Gruvbox (Dark)</option>
+					<option value="monokai-light">Monokai (Light)</option>
+					<option value="monokai-dark">Monokai (Dark)</option>
+					<option value="solarized-light">Solarized (Light)</option>
+					<option value="solarized-dark">Solarized (Dark)</option>
+				</select>
+			</div>
 		</banner>
 
 		<wrapper>
 
 			<header>
-				<h1><a href="/"><img class="title" alt="VeriHash.io" src="logo-light.svg" /></a></h1>
+				<h1>
+					<a href="/"><img class="title" alt="VeriHash.io" src="logo-light.svg" /></a>
+				</h1>
 			</header>
 
 			<content>
@@ -123,3 +136,5 @@
 
 <!-- My theme changer -->
 <script type="text/javascript" src="theme.js"></script>
+<!-- My scrolling script to change elements -->
+<script type="text/javascript" src="scroll.js"></script>
