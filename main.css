@@ -15,10 +15,11 @@
 	--wtia: url("wtia-light.png");
 	--social-email-image: url("email-light.svg");
 	--social-email-bg-color: #000000;
-	--social-email-hover-color: #191919;
+	--social-email-hover-color: #cc241d;
 	--social-github-image: url("github-light.svg");
 	--social-github-bg-color: #000000;
-	--social-github-hover-color: #191919;
+	--social-github-hover-color: #cc241d;
+	--code-bg: url("code_for_light_bg.png");
 }
 
 .dark
@@ -34,10 +35,11 @@
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
-	--social-email-hover-color: #f9f9f9;
+	--social-email-hover-color: #cc241d;
 	--social-github-image: url("github-dark.svg");
 	--social-github-bg-color: #ffffff;
-	--social-github-hover-color: #f9f9f9;
+	--social-github-hover-color: #cc241d;
+	--code-bg: url("code_for_dark_bg.png");
 }
 
 .red-light
@@ -53,10 +55,11 @@
 	--wtia: url("wtia-light.png");
 	--social-email-image: url("email-light.svg");
 	--social-email-bg-color: #000000;
-	--social-email-hover-color: #191919;
+	--social-email-hover-color: #ff2a2a;
 	--social-github-image: url("github-light.svg");
 	--social-github-bg-color: #000000;
-	--social-github-hover-color: #191919;
+	--social-github-hover-color: #ff2a2a;
+	--code-bg: url("code_for_light_bg.png");
 }
 
 .red-dark
@@ -72,10 +75,11 @@
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
-	--social-email-hover-color: #f9f9f9;
+	--social-email-hover-color: #ff2a2a;
 	--social-github-image: url("github-dark.svg");
 	--social-github-bg-color: #ffffff;
-	--social-github-hover-color: #f9f9f9;
+	--social-github-hover-color: #ff2a2a;
+	--code-bg: url("code_for_dark_bg.png");
 }
 
 .green-light
@@ -91,10 +95,11 @@
 	--wtia: url("wtia-light.png");
 	--social-email-image: url("email-light.svg");
 	--social-email-bg-color: #000000;
-	--social-email-hover-color: #191919;
+	--social-email-hover-color: #8dd35f;
 	--social-github-image: url("github-light.svg");
 	--social-github-bg-color: #000000;
-	--social-github-hover-color: #191919;
+	--social-github-hover-color: #8dd35f;
+	--code-bg: url("code_for_light_bg.png");
 }
 
 .green-dark
@@ -110,10 +115,11 @@
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
-	--social-email-hover-color: #f9f9f9;
+	--social-email-hover-color: #8dd35f;
 	--social-github-image: url("github-dark.svg");
 	--social-github-bg-color: #ffffff;
-	--social-github-hover-color: #f9f9f9;
+	--social-github-hover-color: #8dd35f;
+	--code-bg: url("code_for_dark_bg.png");
 }
 
 .blue-light
@@ -129,10 +135,11 @@
 	--wtia: url("wtia-light.png");
 	--social-email-image: url("email-light.svg");
 	--social-email-bg-color: #000000;
-	--social-email-hover-color: #191919;
+	--social-email-hover-color: #0088aa;
 	--social-github-image: url("github-light.svg");
 	--social-github-bg-color: #000000;
-	--social-github-hover-color: #191919;
+	--social-github-hover-color: #0088aa;
+	--code-bg: url("code_for_light_bg.png");
 }
 
 .blue-dark
@@ -148,10 +155,11 @@
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
-	--social-email-hover-color: #f9f9f9;
+	--social-email-hover-color: #0088aa;
 	--social-github-image: url("github-dark.svg");
 	--social-github-bg-color: #ffffff;
-	--social-github-hover-color: #f9f9f9;
+	--social-github-hover-color: #0088aa;
+	--code-bg: url("code_for_dark_bg.png");
 }
 
 .grey-light
@@ -167,10 +175,11 @@
 	--wtia: url("wtia-light.png");
 	--social-email-image: url("email-light.svg");
 	--social-email-bg-color: #000000;
-	--social-email-hover-color: #191919;
+	--social-email-hover-color: #b3b3b3;
 	--social-github-image: url("github-light.svg");
 	--social-github-bg-color: #000000;
-	--social-github-hover-color: #191919;
+	--social-github-hover-color: #b3b3b3;
+	--code-bg: url("code_for_light_bg.png");
 }
 
 .grey-dark
@@ -186,10 +195,11 @@
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
-	--social-email-hover-color: #f9f9f9;
+	--social-email-hover-color: #b3b3b3;
 	--social-github-image: url("github-dark.svg");
 	--social-github-bg-color: #ffffff;
-	--social-github-hover-color: #f9f9f9;
+	--social-github-hover-color: #b3b3b3;
+	--code-bg: url("code_for_dark_bg.png");
 }
 
 .rainbow-light
@@ -205,10 +215,11 @@
 	--wtia: url("wtia-light.png");
 	--social-email-image: url("email-light.svg");
 	--social-email-bg-color: #000000;
-	--social-email-hover-color: #191919;
+	--social-email-hover-color: #cc241d;
 	--social-github-image: url("github-light.svg");
 	--social-github-bg-color: #000000;
-	--social-github-hover-color: #191919;
+	--social-github-hover-color: #cc241d;
+	--code-bg: url("code_for_light_bg.png");
 }
 
 .rainbow-dark
@@ -224,10 +235,11 @@
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
-	--social-email-hover-color: #f9f9f9;
+	--social-email-hover-color: #cc241d;
 	--social-github-image: url("github-dark.svg");
 	--social-github-bg-color: #ffffff;
-	--social-github-hover-color: #f9f9f9;
+	--social-github-hover-color: #cc241d;
+	--code-bg: url("code_for_dark_bg.png");
 }
 
 .gruvbox-light
@@ -243,10 +255,11 @@
 	--wtia: url("wtia-light.png");
 	--social-email-image: url("email-light.svg");
 	--social-email-bg-color: #000000;
-	--social-email-hover-color: #191919;
+	--social-email-hover-color: #fb4934;
 	--social-github-image: url("github-light.svg");
 	--social-github-bg-color: #000000;
-	--social-github-hover-color: #191919;
+	--social-github-hover-color: #fb4934;
+	--code-bg: url("code_for_light_bg.png");
 }
 
 .gruvbox-dark
@@ -262,10 +275,11 @@
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
-	--social-email-hover-color: #f9f9f9;
+	--social-email-hover-color: #fb4934;
 	--social-github-image: url("github-dark.svg");
 	--social-github-bg-color: #ffffff;
-	--social-github-hover-color: #f9f9f9;
+	--social-github-hover-color: #fb4934;
+	--code-bg: url("code_for_dark_bg.png");
 }
 
 .monokai-light
@@ -281,10 +295,11 @@
 	--wtia: url("wtia-light.png");
 	--social-email-image: url("email-light.svg");
 	--social-email-bg-color: #000000;
-	--social-email-hover-color: #191919;
+	--social-email-hover-color: #f92672;
 	--social-github-image: url("github-light.svg");
 	--social-github-bg-color: #000000;
-	--social-github-hover-color: #191919;
+	--social-github-hover-color: #f92672;
+	--code-bg: url("code_for_light_bg.png");
 }
 
 .monokai-dark
@@ -300,10 +315,11 @@
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
-	--social-email-hover-color: #f9f9f9;
+	--social-email-hover-color: #f92672;
 	--social-github-image: url("github-dark.svg");
 	--social-github-bg-color: #ffffff;
-	--social-github-hover-color: #f9f9f9;
+	--social-github-hover-color: #f92672;
+	--code-bg: url("code_for_dark_bg.png");
 }
 
 .solarized-light
@@ -319,10 +335,11 @@
 	--wtia: url("wtia-light.png");
 	--social-email-image: url("email-light.svg");
 	--social-email-bg-color: #000000;
-	--social-email-hover-color: #191919;
+	--social-email-hover-color: #dc322f;
 	--social-github-image: url("github-light.svg");
 	--social-github-bg-color: #000000;
-	--social-github-hover-color: #191919;
+	--social-github-hover-color: #dc322f;
+	--code-bg: url("code_for_light_bg.png");
 }
 
 .solarized-dark
@@ -338,13 +355,19 @@
 	--wtia: url("wtia-dark.png");
 	--social-email-image: url("email-dark.svg");
 	--social-email-bg-color: #ffffff;
-	--social-email-hover-color: #f9f9f9;
+	--social-email-hover-color: #dc322f;
 	--social-github-image: url("github-dark.svg");
 	--social-github-bg-color: #ffffff;
-	--social-github-hover-color: #f9f9f9;
+	--social-github-hover-color: #dc322f;
+	--code-bg: url("code_for_dark_bg.png");
 }
 
 /* Main CSS */
+
+:root
+{
+	--main-width: 850px;
+}
 
 html, body
 {
@@ -363,6 +386,9 @@ body
 	font-weight: 300;
 	margin: 0;
 	padding: 0;
+	background-image: var(--code-bg);
+	background-repeat: no-repeat;
+	background-position-y: top;
 }
 
 h2
@@ -473,7 +499,7 @@ wrapper
 	display: block;
 	flex: 1 0 auto;
 	margin: 4em auto 1.5em auto;
-	max-width: 850px;
+	max-width: var(--main-width);
 	padding: 0 2em;
 	width: calc(100% - 4em);
 }
@@ -501,13 +527,14 @@ header h1
 
 header title
 {
-	width: 850px;
+	width: var(--main-width);
 }
 
 header img
 {
 	width: 100%;
-	max-width: calc(100%);
+	max-width: calc(75%);
+	margin-left: calc(12.5%);
 	content: var(--logo);
 }
 
@@ -517,7 +544,7 @@ content
 {
 	display: block;
 	margin: 0 auto;
-	max-width: 850px;
+	max-width: var(--main-width);
 }
 
 content img.wtia
@@ -556,7 +583,7 @@ footer img.logo
 {
 	content: var(--logo-footer);
 	height: 100%;
-	width: 150px;
+	width: 125px;
 	margin-bottom: 0.5em;
 	max-width: 30%;
 }
