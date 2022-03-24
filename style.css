@@ -2,11 +2,14 @@
 
 :root
 {
-	--logo: url("assets/logo-full-dark-bg.svg");
-	--bg-image: url("assets/buildings.jpg");
+	--logo: url("assets/logo-truncated-dark-bg.svg");
+	--bg-pattern: url("assets/bgs/pattern.png");
+	--bg-buildings: url("assets/bgs/buildings.jpg");
 	--white: #eef9fe;
 	--black: #1d2021;
 	--red: #cc241d;
+	--grey1: #dddddd;
+	--grey2: #9e9e9e;
 	--wave-top: url("assets/waves/red-top.svg");
 	--wave-bottom: url("assets/waves/red-bottom.svg");
 	--light: 300;
@@ -26,7 +29,7 @@ body
 	justify-content: space-between;
 	height: 100%;
 	background-color: var(--white);
-	background-image: url("assets/pattern.png");
+	background-image: var(--bg-pattern);
 	background-attachment: fixed;
 	color: var(--black);
 	font-family: "Barlow", sans-serif;
@@ -47,7 +50,7 @@ p
 
 div.header
 {
-	background-image: var(--wave-top), var(--bg-image);
+	background-image: var(--wave-top), var(--bg-buildings);
 	background-size: auto, 100%;
 	background-position-x: left, center;
 	background-position-y: bottom, top;
@@ -105,11 +108,30 @@ div.wrapper *
 	max-width: 1000px;
 }
 
-div.intro img
+div.wrapper div.intro
 {
-	width: 50%;
-	align-self: flex-start;
-	margin-left: 1em;
+	display: block;
+}
+
+div.wrapper div.intro div
+{
+	float: right;
+	min-width: 150px;
+	width: 35%;
+	margin: 0 0 1em 1em;
+}
+
+div.wrapper div.intro img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	margin: unset;
+}
+
+div.intro p:first-of-type
+{
+	margin-top: 0;
 }
 
 div.red
@@ -122,6 +144,7 @@ div.red
 div.black
 {
 	background-color: var(--black);
+	color: var(--white);
 }
 
 div.rows
@@ -129,7 +152,7 @@ div.rows
 	flex-direction: column;
 }
 
-div.mugshot
+div.mugshot, div.clients, div.partners
 {
 	width: 100%;
 	justify-content: space-evenly;
@@ -150,7 +173,7 @@ div.mugshot img
 {
 	background-color: var(--white);
 	border: 10px solid var(--white);
-	max-width: 20vw;
+	max-width: 200px;
 	border-radius: 50%;
 	margin: 2em 0 1em 0;
 }
@@ -159,6 +182,63 @@ div.mugshot p:first-of-type
 {
 	font-size: 1.5em;
 	margin-bottom: 0;
+}
+
+div.clients div.rows
+{
+	margin: 1em;
+}
+
+div.clients div.rows p.medium
+{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+div.clients div.rows div.columns
+{
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+div.partners
+{
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+div.clients div.rows div.columns a, div.wrapper div.partners a
+{
+	display: inline-block;
+	background-color: var(--grey1);
+	border-radius: 10px;
+	padding: 20px;
+	width: 100px;
+	height: 50px;
+	margin: 10px;
+	border: unset;
+}
+
+div.wrapper div.partners a
+{
+	width: 7em;
+	height: 2em;
+}
+
+div.clients div.rows div.columns a:hover, div.wrapper div.partners a:hover
+{
+	background-color: var(--red);
+}
+
+div.clients img, div.partners img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 div.buildings
@@ -183,21 +263,35 @@ div.wrapper a:hover
 	border-bottom: 2px solid var(--red);
 }
 
-h2
+div.wrapper a.bubble-black, div.wrapper a.bubble-white
+{
+	color: var(--white);
+	border: 10px solid var(--red);
+	background-color: var(--red);
+	margin-top: 3em;
+	border-radius: 10px;
+	padding: 0 0.25em;
+	text-align: center;
+}
+
+div.wrapper a.bubble-black:hover
+{
+	border-color: var(--black);
+	background-color: var(--black);
+}
+
+div.wrapper a.bubble-white:hover
+{
+	color: var(--red);
+	border-color: var(--white);
+	background-color: var(--white);
+}
+
+h2, h3
 {
 	margin: 1em 0 0 0;
 	line-height: 1.2em;
 	text-align: center;
-}
-
-div p:first-of-type
-{
-	margin-top: 0;
-}
-
-div p:last-of-type
-{
-	margin-bottom: 0;
 }
 
 div h2:first-of-type
@@ -210,7 +304,7 @@ div.footer
 	color: var(--white);
 	justify-content: center;
 	align-items: center;
-	background-image: var(--wave-bottom), var(--bg-image);
+	background-image: var(--wave-bottom), var(--bg-buildings);
 	background-size: auto, 100%;
 	background-position-y: top, bottom;
 	background-repeat: repeat-x, no-repeat;
