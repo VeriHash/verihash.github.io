@@ -64,7 +64,12 @@ div.header img.logo
 {
 	height: 50px;
 	content: var(--logo);
-	margin: 50px 20px 80px 50px;
+	margin: 50px 50px 80px 50px;
+}
+
+div.header a:hover img
+{
+	content: url("assets/logo-truncated-dark-bg-rainbow.svg");
 }
 
 div.navigation a
@@ -78,6 +83,11 @@ div.navigation a
 	text-decoration: none;
 	display: inline-block;
 	border-bottom: 5px solid transparent;
+}
+
+div.navigation a:first-of-type
+{
+	margin-right: 0px;
 }
 
 div.navigation a:last-of-type
