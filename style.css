@@ -55,49 +55,58 @@ div.header
 	background-position-x: left, center;
 	background-position-y: bottom, top;
 	background-repeat: repeat-x, no-repeat;
-	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	background-attachment: scroll, fixed;
+	padding: 50px 50px 40px 50px;
 }
 
-div.header img.logo
-{
+div.header div.header_container {
+	max-width: 1000px;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+div.header div.header_container div.logo {
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+div.header div.header_container div.logo img.logo {
 	height: 50px;
 	content: var(--logo);
-	margin: 50px 50px 80px 50px;
 }
 
-div.header a:hover img
-{
+div.header div.header_container div.logo a:hover img {
 	content: url("assets/logo-truncated-dark-bg-rainbow.svg");
 }
 
-div.navigation a
-{
+div.header div.header_container div.navigation {
+	margin-bottom: 30px;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+div.header div.header_container div.navigation a {
 	color: #eef9fe;
 	font-family: "Barlow", sans-serif;
-	font-size: 28px;
+	font-size: 1.2em;
 	font-weight: var(--medium);
-	margin: 5px 0 5px 30px;
-	padding-bottom: 5px;
+	margin: 5px 15px;
+	outline-offset: 5px;
+	padding: 5px 0;
 	text-decoration: none;
-	display: inline-block;
 	border-bottom: 5px solid transparent;
 }
 
-div.navigation a:first-of-type
-{
-	margin-right: 0px;
-}
-
-div.navigation a:last-of-type
-{
-	margin-right: 50px;
-}
-
-div.navigation a.active, div.navigation a:hover
-{
+div.header div.header_container div.navigation a.active,
+div.header div.header_container div.navigation a:hover {
 	border-bottom: 5px solid var(--red);
+}
+
+.wrapped {
+	justify-content: center !important;
 }
 
 div.wrapper
@@ -194,7 +203,7 @@ div.mugshot p:first-of-type
 	margin-bottom: 0;
 }
 
-div.clients div.rows
+div.clients div.rows, div.clients a
 {
 	margin: 1em;
 }
@@ -207,11 +216,17 @@ div.clients div.rows p.medium
 	font-size: 1.1em;
 }
 
-div.clients div.rows div.columns
+div.clients div.rows div.columns,
+div.infra
 {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+}
+
+div.infra
+{
+	max-width: 700px;
 }
 
 div.partners
@@ -221,7 +236,9 @@ div.partners
 	flex-wrap: wrap;
 }
 
-div.clients div.rows div.columns a, div.wrapper div.partners a
+div.clients div.rows div.columns a,
+div.wrapper div.partners a,
+div.wrapper div.clients a
 {
 	display: inline-block;
 	background-color: var(--grey1);
@@ -236,10 +253,12 @@ div.clients div.rows div.columns a, div.wrapper div.partners a
 div.wrapper div.partners a
 {
 	width: 7em;
-	height: 2.5em;
+	height: 2em;
 }
 
-div.clients div.rows div.columns a:hover, div.wrapper div.partners a:hover
+div.clients div.rows div.columns a:hover,
+div.wrapper div.partners a:hover,
+div.wrapper div.infra a:hover
 {
 	background-color: var(--red);
 }
@@ -418,35 +437,13 @@ img.wtia
 	font-weight: var(--medium);
 }
 
+.centered
+{
+	text-align: center;
+}
+
 @media screen and (max-width: 1000px)
 {
-	div.header
-	{
-		flex-direction: column;
-	}
-
-	div.header a img.logo
-	{
-		width: calc(100% - 2em);
-		margin: 50px 1em 20px 1em;
-	}
-
-	div.navigation
-	{
-		margin-bottom: 50px;
-	}
-
-	div.navigation a
-	{
-		font-size: 3.5vw;
-		margin: 5px 15px;
-	}
-
-	div.navigation a:last-of-type
-	{
-		margin-right: 15px;
-	}
-
 	div.footer a
 	{
 		font-size: 2vw;
@@ -456,12 +453,12 @@ img.wtia
 
 @media screen and (max-width: 800px)
 {
-	div.columns
+	/* div.columns
 	{
 		flex-direction: column;
-	}
+	} */
 
-	div.intro
+	/* div.intro
 	{
 		align-items: center;
 	}
@@ -471,5 +468,5 @@ img.wtia
 		margin-top: 2em;
 		margin-left: unset;
 		align-self: center;
-	}
+	} */
 }
