@@ -9,7 +9,6 @@
 	--black: #1d2021;
 	--red: #cc241d;
 	--grey1: #dddddd;
-	--grey2: #9e9e9e;
 	--wave-top: url("assets/waves/red-top.svg");
 	--wave-bottom: url("assets/waves/red-bottom.svg");
 	--light: 300;
@@ -137,17 +136,52 @@ div.wrapper *
 	max-width: 1000px;
 }
 
-div.wrapper div.intro
+div.wrapper div.intro,
+div.wrapper div.index_who
 {
 	display: block;
 }
 
-div.wrapper div.intro figure
+div.wrapper div.intro figure,
+div.wrapper div.index_who figure
 {
 	float: right;
 	min-width: 150px;
 	width: 35%;
 	margin: 0 0 1em 1em;
+}
+
+div.wrapper div.platform div.rows
+{
+	max-width: 275px;
+}
+
+div.wrapper div.platform div.rows figure img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+div.wrapper div.platform div.rows p
+{
+	text-align: center;
+}
+
+div.wrapper div.index_who figure
+{
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+div.wrapper div.platform figure a:hover
+{
+	border-bottom-width: 0;
+}
+
+div.index_who p:last-of-type
+{
+	margin-bottom: 0;
 }
 
 div.jobs figure
@@ -275,7 +309,8 @@ figcaption
 	text-align: center;
 }
 
-div.wrapper div.intro img
+div.wrapper div.intro img,
+div.wrapper div.index_who img
 {
 	width: 100%;
 	height: 100%;
@@ -283,7 +318,8 @@ div.wrapper div.intro img
 	margin: unset;
 }
 
-div.intro p:first-of-type
+div.intro p:first-of-type,
+div.index_who p:first-of-type
 {
 	margin-top: 0;
 }
@@ -306,7 +342,9 @@ div.rows
 	flex-direction: column;
 }
 
-div.mugshot, div.clients, div.partners
+div.mugshot,
+div.clients,
+div.partners
 {
 	width: 100%;
 	justify-content: space-evenly;
@@ -317,45 +355,160 @@ div.partners div
 	align-items: center;
 }
 
-div.mugshot
+div.partners div.columns
+{
+	margin: 1em 0;
+	max-width: 800px;
+	width: 100%;
+}
+
+a.button
+{
+	flex-shrink: 0;
+}
+
+div.red div.clients div.rows div.columns a.client:hover
+{
+	background-color: var(--white);
+}
+
+@media screen and (max-width: 600px)
+{
+	div.partners div.columns
+	{
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+div.wrapper div.mugshot
 {
 	flex-wrap: wrap;
 }
 
-div.mugshot div.rows
+div.wrapper div.mugshot div.rows
 {
 	max-width: 300px;
 	align-items: center;
 	text-align: center;
 }
 
-div.mugshot p.medium
+div.wrapper div.mugshot p.medium
 {
 	white-space: nowrap;
 }
 
-div.mugshot img
+div.wrapper div.mugshot div.rows a img.profile
+{
+	border-color: var(--black);
+	background-color: var(--black);
+}
+
+div.red div.mugshot div.rows a img.profile
+{
+	border-color: var(--white);
+	background-color: var(--white);
+}
+
+div.wrapper div.about div.columns
+{
+	margin: 1em 0;
+}
+
+div.wrapper div.about div.columns div.rows
+{
+	min-width: 250px;
+}
+
+div.wrapper div.mugshot img.profile
 {
 	background-color: var(--white);
 	border: 10px solid var(--white);
 	max-width: 200px;
 	border-radius: 50%;
-	margin: 2em 0 1em 0;
+	margin: 2em 0 0 0;
 }
 
-div.mugshot img.red
+div.wrapper div.about img.profile
 {
-	background-color: var(--red);
-	border-color: var(--red);
+	margin: 0.5em 0 0 0;
 }
 
-div.mugshot p:first-of-type
+div.wrapper div.mugshot p.name
 {
 	font-size: 1.5em;
 	margin-bottom: 0;
 }
 
-div.clients div.rows, div.clients a
+div.wrapper div.mugshot div.rows a
+{
+	font-weight: var(--light);
+}
+
+a.white p
+{
+	color: var(--white);
+}
+
+div.wrapper div.mugshot div.rows a.link
+{
+	font-size: 1em;
+	display: flex;
+	border: none;
+	justify-self: left;
+	width: 100%;
+}
+
+div.wrapper div.about div.columns div.rows
+{
+	justify-items: center;
+}
+
+div.wrapper div.about div.columns div.rows a.link
+{
+	margin: 0.25em 0.5em;
+}
+
+div.red > * a
+{
+	color: var(--black) !important;
+}
+
+div.red > * a:hover
+{
+	border-bottom-color: var(--black) !important;
+}
+
+div.wrapper div.mugshot div.rows a.link:hover p
+{
+	border-color: var(--black);
+	color: var(--black);
+}
+
+div.wrapper div.mugshot div.rows a.link img
+{
+	align-self: center;
+	width: 35px;
+}
+
+div.wrapper div.mugshot div.rows a.link:hover img.email
+{
+	content: url("assets/email-black.svg")
+}
+
+div.wrapper div.mugshot div.rows a.link:hover img.github
+{
+	content: url("assets/github-black.svg")
+}
+
+div.wrapper div.mugshot div.rows a.link:hover img.linkedin
+{
+	content: url("assets/linkedin-black.png")
+}
+
+div.clients div.rows,
+div.clients a
 {
 	margin: 1em;
 }
@@ -369,16 +522,34 @@ div.clients div.rows p.medium
 }
 
 div.clients div.rows div.columns,
-div.infra
+div.infra,
+div.protocols
 {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
+div.platform
+{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.platform div.rows
+{
+	margin: 0 1em;
+	align-items: center;
+}
+
 div.infra
 {
 	max-width: 700px;
+}
+
+div.protocols
+{
+	max-width: 600px;
 }
 
 div.partners
@@ -389,7 +560,7 @@ div.partners
 }
 
 div.clients div.rows div.columns a,
-div.wrapper div.partners a,
+div.wrapper div.partners a.button,
 div.wrapper div.clients a
 {
 	display: inline-block;
@@ -403,20 +574,22 @@ div.wrapper div.clients a
 	text-align: center;
 }
 
-div.wrapper div.partners a
+div.wrapper div.partners a.button
 {
 	width: 7em;
 	height: 2em;
 }
 
 div.clients div.rows div.columns a:hover,
-div.wrapper div.partners a:hover,
-div.wrapper div.infra a:hover
+div.wrapper div.partners a.button:hover,
+div.wrapper div.infra a:hover,
+div.wrapper div.protocols a:hover
 {
 	background-color: var(--red);
 }
 
-div.clients img, div.partners img
+div.clients img,
+div.partners img
 {
 	width: 100%;
 	height: 100%;
@@ -461,7 +634,9 @@ div.wrapper a.daniel:hover img
 	content: url("assets/daniel_hyper.png");
 }
 
-div.wrapper a.bubble-black, div.wrapper a.bubble-white
+div.wrapper a.bubble-black,
+div.wrapper a.bubble-white,
+div.wrapper a.bubble-red
 {
 	color: var(--white);
 	border: 10px solid var(--red);
@@ -470,6 +645,13 @@ div.wrapper a.bubble-black, div.wrapper a.bubble-white
 	border-radius: 10px;
 	padding: 0 0.25em;
 	text-align: center;
+}
+
+div.wrapper a.bubble-red
+{
+	color: var(--red);
+	border: 10px solid var(--white);
+	background-color: var(--white);
 }
 
 div.wrapper a.bubble-black:hover
@@ -485,6 +667,13 @@ div.wrapper a.bubble-white:hover
 	background-color: var(--white);
 }
 
+div.wrapper a.bubble-red:hover
+{
+	color: var(--white);
+	border-color: var(--black);
+	background-color: var(--black);
+}
+
 h2, h3
 {
 	margin: 1em 0 0 0;
@@ -495,6 +684,11 @@ h2, h3
 div h2:first-of-type
 {
 	margin: 0 0 1.5em 0;
+}
+
+h2.no_margin
+{
+	margin: 0 !important;
 }
 
 div.footer
