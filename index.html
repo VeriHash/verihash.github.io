@@ -1,142 +1,197 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-	<head>
+<head>
 
-		<title>VeriHash - Home</title>
-		<link rel="canonical" href="https://www.verihash.io/"/>
+	<title>VeriHash - Home</title>
+	<link rel="canonical" href="https://www.verihash.io/" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta charset="utf-8" />
-		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-		<meta name="google-site-verification" content="ZIfaUTMuHBpuALk3P-3cIWNgrO6lTVyqavUlLanYO-c" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="google-site-verification" content="ZIfaUTMuHBpuALk3P-3cIWNgrO6lTVyqavUlLanYO-c" />
 
-		<!-- Favicons: https://github.com/fuzzywalrus/Photoshop-FavIcon-Action -->
-		<!-- Generics -->
-		<link rel="icon" href="favicon-16.png" sizes="16x16">
-		<link rel="icon" href="favicon-32.png" sizes="32x32">
-		<link rel="icon" href="favicon-128.png" sizes="128x128">
-		<link rel="icon" href="favicon-192.png" sizes="192x192">
-		<!-- Android -->
-		<link rel="shortcut icon" href="favicon-196.png" sizes="196x196">
-		<!-- iOS -->
-		<link rel="apple-touch-icon" href="favicon-152.png" sizes="152x152">
-		<link rel="apple-touch-icon" href="favicon-167.png" sizes="167x167">
-		<link rel="apple-touch-icon" href="favicon-180.png" sizes="180x180">
-		<!-- End Favicons -->
+	<!-- Favicons: https://github.com/fuzzywalrus/Photoshop-FavIcon-Action -->
+	<!-- Generics -->
+	<link rel="icon" href="assets/favicon-16.png" sizes="16x16">
+	<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+	<link rel="icon" href="assets/favicon-128.png" sizes="128x128">
+	<link rel="icon" href="assets/favicon-192.png" sizes="192x192">
+	<!-- Android -->
+	<link rel="shortcut icon" href="assets/favicon-196.png" sizes="196x196">
+	<!-- iOS -->
+	<link rel="apple-touch-icon" href="assets/favicon-152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="assets/favicon-167.png" sizes="167x167">
+	<link rel="apple-touch-icon" href="assets/favicon-180.png" sizes="180x180">
+	<!-- End Favicons -->
 
-		<!-- Open Graph tags: https://ogp.me/ -->
-		<meta property="og:title" content="VeriHash - Home" />
-		<meta property="og:description" content="Creating resilient and secure blockchain infrastructure." />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://www.verihash.io/" />
-		<meta property="og:image" content="http://www.verihash.io/og_image.png" />
-		<meta property="og:image:secure_url" content="https://www.verihash.io/og_image.png" />
-		<meta property="og:image:type" content="image/png" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-		<meta property="og:image:alt" content="The Verihash Logo" />
-		<!-- End Open Graph tags -->
+	<!-- Open Graph tags: https://ogp.me/ -->
+	<meta property="og:title" content="VeriHash - Home" />
+	<meta property="og:description" content="Creating resilient and secure blockchain infrastructure." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.verihash.io/" />
+	<meta property="og:image" content="http://www.verihash.io/assets/og_image.png" />
+	<meta property="og:image:secure_url" content="https://www.verihash.io/assets/og_image.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="The Verihash Logo" />
+	<!-- End Open Graph tags -->
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5P4YEC53X"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5P4YEC53X"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-K5P4YEC53X');
+	</script>
 
-		  gtag('config', 'G-K5P4YEC53X');
-		</script>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css" />
 
-		<!-- My CSS -->
-		<link rel="stylesheet" href="main.css" />
+</head>
 
-	</head>
+<body>
 
-	<body class="light">
-
-		<banner class="banner">
-			<div id="bannerLogo" class="logo hide">
-				<a href="/"><img alt="VeriHash.io" src="logo-light.svg" /></a>
+	<div class="header">
+		<div id="header_container" class="header_container">
+			<div class="logo">
+				<a href="index.html" title="Home">
+					<img class="logo" src="assets/logo-truncated-dark-bg.svg" alt="VeriHash.io" />
+				</a>
 			</div>
-			<!-- <div id="bannerLinks" class="links hide">
-				<a href="services.html">Services</a>
-				&bullet;
-				<a href="services.html">Contact</a>
-			</div> -->
-			<div class="themeSelector">
-				Color Theme:&nbsp;
-				<select id="themeSelector">
-					<option value="light">Default (Light)</option>
-					<option value="dark">Default (Dark)</option>
-					<option value="red-light">Red (Light)</option>
-					<option value="red-dark">Red (Dark)</option>
-					<option value="green-light">Green (Light)</option>
-					<option value="green-dark">Green (Dark)</option>
-					<option value="blue-light">Blue (Light)</option>
-					<option value="blue-dark">Blue (Dark)</option>
-					<option value="grey-light">Grey (Light)</option>
-					<option value="grey-dark">Grey (Dark)</option>
-					<option value="rainbow-light">Rainbow (Light)</option>
-					<option value="rainbow-dark">Rainbow (Dark)</option>
-					<option value="gruvbox-light">Gruvbox (Light)</option>
-					<option value="gruvbox-dark">Gruvbox (Dark)</option>
-					<option value="monokai-light">Monokai (Light)</option>
-					<option value="monokai-dark">Monokai (Dark)</option>
-					<option value="solarized-light">Solarized (Light)</option>
-					<option value="solarized-dark">Solarized (Dark)</option>
-				</select>
-			</div>
-		</banner>
+			<div id="navigation" class="navigation">
+				<a href="index.html">Home</a>
+				<a href="about_us.html">About Us</a>
+				<a href="platform.html">Platform</a>
+				<a href="partners.html">Partners</a>
+				<a href="jobs.html">Jobs</a>
+				<a href="contact.html">Contact</a>
+				</div>
+				</div>
+	</div>
 
-		<wrapper>
+	<div class="wrapper">
+		<h2>We Create Blockchain Infrastructure</h2>
+		<div class="intro">
+			<figure>
+				<img src="assets/ethereum/impact_transparent.png">
+				<figcaption>
+					Image <a href="https://creativecommons.org/licenses/by/4.0/" target="_new">CC BY 4.0</a> via <a
+						href="https://ethereum.org/en/assets/" target="_new">ethereum.org</a>
+				</figcaption>
+			</figure>
+			<p>We create and administer secure and resilient infrastructure for current and
+				future blockchain requirements.</p>
+			<p>We bring vast experience architecting and administrating infrastructure in many deployment
+				environments ranging from on-premesis startups to multi-cloud Fortune 500 companies.</p>
+			<p>We have deep experience in diverse compute orchestration platforms and pride ourselves on developing and running
+				efficient, secure, and highly available systems.</p>
+			<p class="medium">We can bring the same level of rigor to help secure, solidify, and diversify your
+				Crypto platform.</p>
+		</div>
+	</div>
 
-			<header>
-				<h1>
-					<a href="/"><img class="title" alt="VeriHash.io" src="logo-light.svg" /></a>
-				</h1>
-			</header>
+	<div class="wrapper red">
+		<h2>Who Is VeriHash?</h2>
+		<div class="rows index_who">
+			<figure>
+				<img src="assets/ethereum/enterprise-eth.png">
+				<figcaption>
+					Image <a href="https://creativecommons.org/licenses/by/4.0/" target="_new">CC BY 4.0</a> via <a
+						href="https://ethereum.org/en/assets/" target="_new">ethereum.org</a>
+				</figcaption>
+			</figure>
+			<p>VeriHash Inc was founded on Valentine's day, 2022. It was love at first byte &#129293;. We have quickly become
+				one of the leading blockchain infrastructure providers and are expanding rapidly into new crypto paradigms. The team
+				itself has been in the crypto space since early 2010s and is now looking to use their knowledge and experience
+				helping other blockchains and crypto technologies.</p>
+			<p class="medium">We pride ourselves on self-healing, resilient, and secure infrastructure and application
+				code.</p>
+		</div>
+		<a class="bubble-red" href="about_us.html">
+			<p>Read more about us and our Team</p>
+		</a>
+	</div>
 
-			<content>
+	<div class="wrapper">
+		<h2>Platform Highlights</h2>
+        <p>VeriHash strives for a platform consisting of the following three main principals:</p>
+        <div class="columns platform">
+            <div class="rows">
+                <h3>Client Diversity</h3>
+                <figure>
+                    <a href="#diversity"><img src="assets/ethereum/eth.png"></a>
+                    <figcaption>
+                        Image <a href="https://creativecommons.org/licenses/by/4.0/" target="_new">CC BY 4.0</a> via <a
+                            href="https://ethereum.org/en/assets/" target="_new">ethereum.org</a>
+                    </figcaption>
+                </figure>
+                <p>Increase resilience by running redundant systems.</p>
+            </div>
+            <div class="rows">
+                <h3>Amazing Infrastructure</h3>
+                <figure>
+                    <a href="#infrastructure"><img src="assets/ethereum/hackathon_transparent.png"></a>
+                    <figcaption>
+                        Image <a href="https://creativecommons.org/licenses/by/4.0/" target="_new">CC BY 4.0</a> via <a
+                            href="https://ethereum.org/en/assets/" target="_new">ethereum.org</a>
+                    </figcaption>
+                </figure>
+                <p>Run the best technology to provide the best service.</p>
+            </div>
+            <div class="rows">
+                <h3>Many Protocols</h3>
+                <figure>
+                    <a href="#protocols"><img src="assets/ethereum/developers-eth-blocks.png"></a>
+                    <figcaption>
+                        Image <a href="https://creativecommons.org/licenses/by/4.0/" target="_new">CC BY 4.0</a> via <a
+                            href="https://ethereum.org/en/assets/" target="_new">ethereum.org</a>
+                    </figcaption>
+                </figure>
+                <p>Support the most crypto protocols to support many clients.</p>
+            </div>
+        </div>
+		<a class="bubble-black" href="platform.html">
+			<p>Explore our Platform</p>
+		</a>
+	</div>
 
-				<h2>About</h2>
+	<div class="wrapper black">
+		<h2>Partner Highlights</h2>
+		<p>We are honored to work with the following in order to make crypto better for all.</p>
+		<div class="columns partners">
+			<a class="button" href="https://stakewise.io/" target="_new"><img src="assets/logos/stakewise.png"></a>
+			<a class="button" href="https://ssv.network/" target="_new"><img src="assets/logos/ssv.png"></a>
+			<a class="button" href="https://lido.fi/" target="_new"><img src="assets/logos/lido_blue.png"></a>
+		</div>
+		<a class="bubble-white" href="partners.html">
+			<p>Learn more about our Partnerships</p>
+		</a>
+	</div>
 
-				<p>We bring decades of experience architecting and administrating infrastructure in many deployment environments ranging from on-premesis startups to multi-cloud Fortune 500 companies. We write software and scripts, perform security audits and implementations, run war rooms, and plan and execute large-scale cross-functional enterprise migrations and upgrades.</p>
-				<p style="font-weight: 600;">We can bring the same level of rigor to help secure, solidify, and diversify your Crypto platform.</p>
-				<p>We have deep experience in diverse compute orchestration platforms and pride ourselves on developing and running efficient, secure, and highly available systems.</p>
+	<div class="footer">
+		<a class="email" href="mailto:info@verihash.io" title="Email VeriHash" target="_new">
+			<img src="assets/email.svg">Email
+		</a>
+		<a class="discord" href="https://discord.gg/pR9wSDnx" target="_new">
+			<img src="assets/discord.svg">Discord
+		</a>
+		<a class="logo" href="/" title="Home">
+			<img src="assets/logo-white.svg">&copy 2022 VeriHash Inc.
+		</a>
+		<a class="github" href="https://github.com/verihash" title="VeriHash Github" target="_new">
+			<img src="assets/github.svg">Github
+		</a>
+		<a class="twitter" href="https://twitter.com/VeriHashInc" title="VeriHash Twitter" target="_new">
+			<img src="assets/twitter.svg">Twitter
+		</a>
+	</div>
 
-				<h2>Contact</h2>
-
-				<p>Feel free to email us at <a href="mailto:info@verihash.io">info@verihash.io</a> for more information on services offered.</p>
-
-				<h2>Affiliations</h2>
-
-				<p><a href="https://www.washingtontechnology.org/blockchain/" target="_new"><img class="wtia" alt="WTIA Logo" /></a>We are a proud member of the <a href="https://www.washingtontechnology.org/blockchain/" target="_new">WTIA Cascadia Blockchain Association</a></p>
-
-			</content>
-
-		</wrapper>
-
-		<footer>
-			<h2><img class="logo" alt="Footer" /></h2>
-			<social>
-				<a class="email" href="mailto:info@verihash.io" title="Email VeriHash" target="_new"><img alt="Email" /></a>
-				<a class="github" href="https://github.com/verihash" title="VeriHash Github" target="_new"><img alt="Github" /></a>
-				<a class="twitter" href="https://twitter.com/VeriHashInc" title="VeriHash Twitter" target="_new"><img alt="Twitter" /></a>
-			</social>
-			<p>
-				<a href="sitemap.xml" title="Sitemap">Sitemap</a>
-				&centerdot;
-				<a href="LICENSE.md" title="Website License" target="_new">Website License</a>
-			</p>
-			<p>&copy; 2022 VeriHash Inc.</p>
-		</footer>
-
-	</body>
+</body>
 
 </html>
 
-<!-- My theme changer -->
-<script type="text/javascript" src="theme.js"></script>
-<!-- My scrolling script to change elements -->
-<script type="text/javascript" src="scroll.js"></script>
+<!-- My flex-wrap detection script -->
+<script type="text/javascript" src="wrap.js"></script>
