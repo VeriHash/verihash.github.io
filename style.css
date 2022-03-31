@@ -9,6 +9,7 @@
 	--black: #1d2021;
 	--red: #cc241d;
 	--grey1: #dddddd;
+	--grey2: #eeeeee;
 	--wave-top: url("assets/waves/red-top.svg");
 	--wave-bottom: url("assets/waves/red-bottom.svg");
 	--light: 300;
@@ -95,7 +96,7 @@ div.header div.header_container div.navigation
 
 div.header div.header_container div.navigation a
 {
-	color: #eef9fe;
+	color: var(--white);
 	font-family: "Barlow", sans-serif;
 	font-size: 1.1em;
 	font-weight: var(--medium);
@@ -106,10 +107,20 @@ div.header div.header_container div.navigation a
 	border-bottom: 5px solid transparent;
 }
 
-div.header div.header_container div.navigation a.active,
-div.header div.header_container div.navigation a:hover
+div.header div.header_container div.navigation a::after
 {
-	border-bottom: 5px solid var(--red);
+    content: '';
+    display: block;
+    width: 0;
+	margin: 3px auto -6px auto;
+    height: 3px;
+    background: var(--red);
+    transition: width .1s;
+}
+
+div.header div.header_container div.navigation a:hover::after
+{
+    width: 100%;
 }
 
 .wrapped
@@ -298,10 +309,6 @@ div.contact div.links div.icon a
 	color: var(--black);
 }
 
-div.contact div.links div.icon a:hover
-{
-	background-color: var(--red);
-}
 
 figcaption
 {
@@ -482,7 +489,6 @@ div.red > * a:hover
 
 div.wrapper div.mugshot div.rows a.link:hover p
 {
-	border-color: var(--black);
 	color: var(--black);
 }
 
@@ -583,9 +589,10 @@ div.wrapper div.partners a.button
 div.clients div.rows div.columns a:hover,
 div.wrapper div.partners a.button:hover,
 div.wrapper div.infra a:hover,
-div.wrapper div.protocols a:hover
+div.wrapper div.protocols a:hover,
+div.contact div.links div.icon a:hover
 {
-	background-color: var(--red);
+	background-color: var(--grey2);
 }
 
 div.clients img,
