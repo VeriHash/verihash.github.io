@@ -354,7 +354,7 @@ div.clients,
 div.partners
 {
 	width: 100%;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 div.partners div
@@ -626,7 +626,8 @@ div.wrapper a:hover
 }
 
 div.wrapper a.brandon:hover,
-div.wrapper a.daniel:hover
+div.wrapper a.daniel:hover,
+div.wrapper a.david:hover
 {
 	border: 0;
 }
@@ -639,6 +640,11 @@ div.wrapper a.brandon:hover img
 div.wrapper a.daniel:hover img
 {
 	content: url("assets/daniel_hyper.png");
+}
+
+div.wrapper a.david:hover img
+{
+	content: url("assets/david_hyper.png");
 }
 
 div.wrapper a.bubble-black,
