@@ -396,14 +396,19 @@ div.wrapper div.mugshot
 
 div.wrapper div.mugshot div.rows
 {
-	max-width: 300px;
+	width: 275px;
 	align-items: center;
-	text-align: center;
 }
 
-div.wrapper div.mugshot p.medium
+div.wrapper div.mugshot div.rows p.medium
 {
 	white-space: nowrap;
+}
+
+div.wrapper div.mugshot div.rows a
+{
+	display: flex;
+	justify-content: center;
 }
 
 div.wrapper div.mugshot div.rows a img.profile
