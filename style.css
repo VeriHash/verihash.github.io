@@ -692,6 +692,12 @@ div.wrapper a.bubble-red:hover
 	background-color: var(--black);
 }
 
+div.wrapper img.carlton
+{
+	width: 25%;
+	max-width: 250px;
+}
+
 h2, h3
 {
 	margin: 1em 0 0 0;
