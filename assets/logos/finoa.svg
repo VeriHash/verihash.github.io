@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1585.9937"
+   height="1585.996"
+   viewBox="0 0 419.6275 419.62811"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="finoa.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="0.50196078"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="px"
+     showgrid="true"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.32462656"
+     inkscape:cx="713.1271"
+     inkscape:cy="840.9663"
+     inkscape:window-width="1240"
+     inkscape:window-height="929"
+     inkscape:window-x="166"
+     inkscape:window-y="448"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9"
+       spacingx="2.6458334"
+       spacingy="2.6458334"
+       empspacing="10"
+       dotted="false"
+       originx="119.75737"
+       originy="168.96479" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(119.75737,168.96479)">
+    <g
+       id="g2161"
+       transform="matrix(1.6920463,0,0,1.6920463,-119.75737,-168.56822)"
+       inkscape:export-filename="C:\Users\dglea\Downloads\finoa.png"
+       inkscape:export-xdpi="15.5"
+       inkscape:export-ydpi="15.5">
+      <path
+         fill-rule="evenodd"
+         clip-rule="evenodd"
+         d="M 41.63,-0.234375 C 18.6384,-0.234375 0,18.404 0,41.3956 V 206.136 c 0,22.991 18.6384,41.63 41.63,41.63 h 164.74 c 22.992,0 41.63,-18.639 41.63,-41.63 V 41.3956 C 248,18.404 229.362,-0.234375 206.37,-0.234375 Z M 100.343,157.369 c 0,12.943 10.547,23.49 23.508,23.49 12.956,0 23.495,-10.547 23.495,-23.49 0,-5.953 -2.222,-11.614 -6.251,-15.967 l -17.244,-17.237 -0.005,0.005 -14.077,-14.072 0.009,-0.009 L 84.0657,84.3786 C 91.181,77.2521 98.3051,70.1344 105.431,63.0187 l 20.715,-20.7096 13.358,13.3525 -28.01,27.9953 12.357,12.3396 22.823,-22.4184 7.424,7.3981 6.681,6.6576 -22.856,22.4422 17.52,17.525 v 0.005 c 7.734,8.314 11.83,18.783 11.83,29.767 0,23.932 -19.486,43.398 -43.422,43.398 -23.9496,0 -43.4231,-19.466 -43.4231,-43.398 0,-10.968 4.0964,-21.424 11.5433,-29.476 l 9.6828,-9.683 14.077,14.073 -9.399,9.403 c -3.768,4.074 -5.989,9.739 -5.989,15.679 z"
+         fill="#32c6a1"
+         id="path5" />
+    </g>
+  </g>
+</svg>
